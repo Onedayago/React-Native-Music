@@ -6,8 +6,12 @@ const defaultState = fromJS({ // 将对象转成immutable对象
 })
 
 export default (state = defaultState, action) => {
-  // switch (action.type) {
-  //
-  // }
+  switch (action.type) {
+    case actionTypes.Login:
+      return state.merge({
+        user: action.data
+      })
+
+  }
   return state
 }

@@ -7,22 +7,31 @@ import {
 } from 'react-navigation';
 
 import LoginView from '../View/LoginView'
+import PhoneLogin from '../View/PhoneLogin'
+import Home from '../View/Home'
 
 // App 主页面
-// const MainNavigator = createStackNavigator({
-//
-// },{
-//   initialRouteName: '',
-// })
+const MainNavigator = createStackNavigator({
+  Home:{
+    screen: Home,
+    navigationOptions: {
+      header: null
+    }
+  }
+},{
+  initialRouteName: 'Home',
+})
 
 //使用 createSwitchNavigator 创建分组导航
 const RootNavigator = createSwitchNavigator({
-  LoginView: LoginView
+  Main: MainNavigator,
+  LoginView: LoginView,
+  PhoneLogin: PhoneLogin
   }, {
   navigationOptions: {
     header: null,
   },
-  initialRouteName: 'LoginView',
+  initialRouteName: 'Main',
 });
 
 

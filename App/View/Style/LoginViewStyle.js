@@ -52,21 +52,6 @@ export default getStyle = function () {
       color: 'white',
       fontSize: 16
     },
-
-    logo:{
-      width: 50,
-      height: 50,
-      borderRadius: 25,
-    },
-
-    circle:{
-      width: 50,
-      height: 50,
-      borderWidth: 1,
-      borderColor: 'white',
-      opacity: 0.2,
-      position: 'absolute'
-    }
   }
 
 }
