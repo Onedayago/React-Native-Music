@@ -33,18 +33,30 @@ const create = ()=>{
 
   //检测手机号是否注册
   const checkPhone =({phone})=> instance.get(`/cellphone/existence/check?phone=${phone}`);
+
   //手机号密码登录
   const login =({phone, password})=> instance.get(`/login/cellphone?phone=${phone}&password=${password}`);
 
   //轮播图
   const getBanner =({type})=> instance.get(`/banner?type=${type}`);
 
+  //每日推荐
+  const getCommend=()=>instance.get('/recommend/songs');
+
+  //获取音乐 url
+  const getUrl=({id})=>instance.get(`/song/url?id=${id}`);
+
+  //获取音乐歌词
+  const getLyric=({id})=>instance.get(`/lyric?id=${id}`);
 
 
   return{
     checkPhone,
     login,
-    getBanner
+    getBanner,
+    getCommend,
+    getUrl,
+    getLyric
   }
 }
 

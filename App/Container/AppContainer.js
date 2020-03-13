@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {
-  createAppContainer,
+  createAppContainer, createDrawerNavigator,
   createStackNavigator,
   createSwitchNavigator,
 } from 'react-navigation';
@@ -9,11 +9,45 @@ import {
 import LoginView from '../View/LoginView'
 import PhoneLogin from '../View/PhoneLogin'
 import Home from '../View/Home'
+import SongList from '../View/SongList'
+import PlaySongView from '../View/PlaySongView'
+import LeftView from '../View/LeftView'
+import {Dimensions} from "react-native";
+
+const winW = Dimensions.get('window').width
+const winH = Dimensions.get('window').height
+//抽屉
+const DrawerNavigator = createDrawerNavigator(
+  {
+    Home: Home,
+  },
+  {
+    drawerWidth: winW*0.8,
+    hideStatusBar: true,
+    drawerBackgroundColor: 'white',
+    overlayColor: 'black',
+    contentComponent:(()=>{
+      return <LeftView/>
+    })
+  }
+);
 
 // App 主页面
 const MainNavigator = createStackNavigator({
-  Home:{
-    screen: Home,
+  Home: {
+    screen: DrawerNavigator,
+    navigationOptions: {
+      header: null
+    }
+  },
+  SongList:{
+    screen: SongList,
+    navigationOptions: {
+      header: null
+    }
+  },
+  PlaySongView:{
+    screen: PlaySongView,
     navigationOptions: {
       header: null
     }
@@ -33,6 +67,8 @@ const RootNavigator = createSwitchNavigator({
   },
   initialRouteName: 'Main',
 });
+
+
 
 
 

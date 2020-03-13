@@ -1,10 +1,11 @@
 import React from 'react'
-import {Text, View, Image, Dimensions} from "react-native";
+import {Text, View, Image, Dimensions, TouchableOpacity} from "react-native";
 import Swiper from 'react-native-swiper'
 import getStyle from './Style/FindViewStyle'
 import Img from "../Img/Image";
 import ApiUtil from '../Service/ApiUtil'
 import {Icon} from "react-native-elements";
+import {withNavigation} from 'react-navigation'
 
 const winW = Dimensions.get('window').width
 const winH = Dimensions.get('window').height
@@ -36,6 +37,7 @@ class FindView extends React.Component{
 
   render(){
     Styles = getStyle()
+    const {navigate} = this.props.navigation
     return(
       <View>
 
@@ -60,7 +62,10 @@ class FindView extends React.Component{
       {/* 项目列表*/}
 
         <View style={Styles.topContainer}>
-          <View style={Styles.topItem}>
+
+          <TouchableOpacity style={Styles.topItem} onPress={()=>{
+            navigate('SongList')
+          }}>
             <Icon
               containerStyle={Styles.topIcon}
               name='calendar'
@@ -68,7 +73,7 @@ class FindView extends React.Component{
               color='white'
             />
             <Text style={Styles.topText}>每日推荐</Text>
-          </View>
+          </TouchableOpacity>
           <View style={Styles.topItem}>
             <Icon
               containerStyle={Styles.topIcon}
@@ -111,4 +116,4 @@ class FindView extends React.Component{
   }
 }
 
-export default FindView
+export default withNavigation(FindView)

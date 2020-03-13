@@ -1,6 +1,6 @@
 import React from 'react'
 import {View, Text, ScrollView, TouchableOpacity} from "react-native";
-import {Header} from "react-native-elements";
+import {Header, Icon} from "react-native-elements";
 import {Dimensions} from 'react-native'
 import getStyle from './Style/HomeStyle'
 import FindView from '../View/FindView'
@@ -52,7 +52,18 @@ class Home extends React.Component{
           <Header
             containerStyle={{backgroundColor: 'white', opacity: 1}}
             placement="center"
-            leftComponent={{ icon: 'menu', color: 'black' }}
+            leftComponent={
+              <TouchableOpacity onPress={()=>{
+                this.props.navigation.openDrawer();
+              }
+              }>
+                <Icon
+                  name='menu'
+                  type='entypo'
+                  color='black'
+                />
+              </TouchableOpacity>
+            }
             centerComponent={
               <View style={{width: '100%', flexDirection: 'row', justifyContent: 'space-around'}}>
                 <TouchableOpacity onPress={()=>this.setIndex(0)}>
@@ -82,7 +93,7 @@ class Home extends React.Component{
           ref={(ref)=>this.scrollView = ref}
         >
           <View style={Styles.container}>
-            <Text>云村</Text>
+            <Text>我的</Text>
           </View>
           <View style={Styles.container}>
             <FindView/>
