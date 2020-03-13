@@ -11,7 +11,7 @@ export default getStyle = function () {
 
     container: {
       width: winW*0.8,
-      height: winH,
+      height: winH-40,
     },
     backImage: {
       width: winW*0.8,
@@ -20,8 +20,19 @@ export default getStyle = function () {
 
     contentContainer: {
       width: winW*0.8,
-      height: winH,
-      backgroundColor: 'red'
+      backgroundColor: 'white',
+      paddingHorizontal: 10,
+      borderRadius: 20,
+      paddingTop: 5,
+      marginTop: -20,
     },
+
+    bottomView: {
+      width: winW*0.8,
+      height: 40,
+      flexDirection: 'row',
+      paddingHorizontal: 23,
+      justifyContent: 'space-between'
+    }
   }
 }
