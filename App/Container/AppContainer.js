@@ -12,6 +12,7 @@ import Home from '../View/Home'
 import SongList from '../View/SongList'
 import PlaySongView from '../View/PlaySongView'
 import LeftView from '../View/LeftView'
+import SongSquare from '../View/SongSquare'
 import {Dimensions} from "react-native";
 
 const winW = Dimensions.get('window').width
@@ -48,6 +49,12 @@ const MainNavigator = createStackNavigator({
   },
   PlaySongView:{
     screen: PlaySongView,
+    navigationOptions: {
+      header: null
+    }
+  },
+  SongSquare:{
+    screen: SongSquare,
     navigationOptions: {
       header: null
     }

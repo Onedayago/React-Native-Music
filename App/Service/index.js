@@ -49,6 +49,11 @@ const create = ()=>{
   //获取音乐歌词
   const getLyric=({id})=>instance.get(`/lyric?id=${id}`);
 
+  //获取歌单分类
+  const getCatList=()=>instance.get('/playlist/catlist?uid=107380882');
+
+  //根据歌单分类获取歌单列表
+  const getPlayList=({before, cat, limit})=>instance.get(`/top/playlist/highquality?before=${before}&limit=${limit}&cat=${cat}`)
 
   return{
     checkPhone,
@@ -56,7 +61,9 @@ const create = ()=>{
     getBanner,
     getCommend,
     getUrl,
-    getLyric
+    getLyric,
+    getCatList,
+    getPlayList
   }
 }
 

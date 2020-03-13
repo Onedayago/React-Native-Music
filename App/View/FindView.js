@@ -74,7 +74,9 @@ class FindView extends React.Component{
             />
             <Text style={Styles.topText}>每日推荐</Text>
           </TouchableOpacity>
-          <View style={Styles.topItem}>
+          <TouchableOpacity style={Styles.topItem} onPress={()=>{
+            navigate('SongSquare')
+          }}>
             <Icon
               containerStyle={Styles.topIcon}
               name='music'
@@ -82,7 +84,7 @@ class FindView extends React.Component{
               color='white'
             />
             <Text style={Styles.topText}>歌单</Text>
-          </View>
+          </TouchableOpacity>
           <View style={Styles.topItem}>
             <Icon
               containerStyle={Styles.topIcon}
