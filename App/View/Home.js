@@ -6,7 +6,7 @@ import getStyle from './Style/HomeStyle'
 import FindView from '../View/FindView'
 import VideoList from './VideoList'
 import ScrollableTabView from "react-native-scrollable-tab-view";
-import CustomTabBar from '../Component/CustomTabBar'
+import CustomTabBar from '../Component/HomeCustomTabBar'
 import VideoView from "./VideoView";
 import MainView from '../Component/MainView'
 
@@ -31,6 +31,7 @@ class Home extends React.Component{
     return(
       <MainView>
         <ScrollableTabView
+          initialPage={1}
           renderTabBar={() => {
            return <CustomTabBar
              activeTextColor={'black'}

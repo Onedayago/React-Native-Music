@@ -13,7 +13,7 @@ const {
 
 const Button = require('./Button');
 
-const CustomTabBar = createReactClass({
+const HomeCustomTabBar = createReactClass({
   propTypes: {
     goToPage: PropTypes.func,
     activeTab: PropTypes.number,
@@ -110,4 +110,4 @@ const styles = StyleSheet.create({
   },
 });
 
-module.exports = CustomTabBar;
+module.exports = HomeCustomTabBar;

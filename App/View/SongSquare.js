@@ -5,6 +5,8 @@ import getStyle from './Style/SongSquareStyle'
 import ScrollableTabView, {ScrollableTabBar}from 'react-native-scrollable-tab-view'
 import ApiUtil from '../Service/ApiUtil'
 import SongPlayList from './SongPlayList'
+import CustomTabBar from '../Component/SongCustomTabBar'
+
 
 let Styles = {}
 class SongSquare extends React.Component{
@@ -21,7 +23,7 @@ class SongSquare extends React.Component{
       const result = await ApiUtil.request('getCatList')
       if(result.data.code === 200){
         this.setState({
-          catList: result.data.sub.slice(0, 10)
+          catList: result.data.sub.slice(0, 5)
         })
       }else{
 
@@ -55,7 +57,7 @@ class SongSquare extends React.Component{
           <ScrollableTabView
             tabBarActiveTextColor={'red'}
             tabBarUnderlineStyle={Styles.lineStyle}
-            renderTabBar={() => <ScrollableTabBar/>}>
+            renderTabBar={() => <CustomTabBar/>}>
             {
               this.state.catList.map((item, index)=>{
                 return(
