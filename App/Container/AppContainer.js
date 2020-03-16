@@ -13,12 +13,13 @@ import SongList from '../View/SongList'
 import PlaySongView from '../View/PlaySongView'
 import LeftView from '../View/LeftView'
 import SongSquare from '../View/SongSquare'
+import VideoList from '../View/VideoList'
 import {Dimensions} from "react-native";
 
 const winW = Dimensions.get('window').width
 const winH = Dimensions.get('window').height
 //抽屉
-const DrawerNavigator = createDrawerNavigator(
+const leftNavigator = createDrawerNavigator(
   {
     Home: Home,
   },
@@ -33,10 +34,12 @@ const DrawerNavigator = createDrawerNavigator(
   }
 );
 
+
+
 // App 主页面
 const MainNavigator = createStackNavigator({
   Home: {
-    screen: DrawerNavigator,
+    screen: leftNavigator,
     navigationOptions: {
       header: null
     }
@@ -58,10 +61,17 @@ const MainNavigator = createStackNavigator({
     navigationOptions: {
       header: null
     }
+  },
+  VideoList:{
+    screen: VideoList,
+    navigationOptions: {
+      header: null
+    }
   }
 },{
   initialRouteName: 'Home',
 })
+
 
 //使用 createSwitchNavigator 创建分组导航
 const RootNavigator = createSwitchNavigator({
@@ -74,9 +84,6 @@ const RootNavigator = createSwitchNavigator({
   },
   initialRouteName: 'Main',
 });
-
-
-
 
 
 export default createAppContainer(RootNavigator);

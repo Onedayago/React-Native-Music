@@ -55,6 +55,15 @@ const create = ()=>{
   //根据歌单分类获取歌单列表
   const getPlayList=({before, cat, limit})=>instance.get(`/top/playlist/highquality?before=${before}&limit=${limit}&cat=${cat}`)
 
+  //获取视频分类
+  const getVideoTag=()=>instance.get('/video/group/list')
+
+  //根据视频分类获取视频
+  const getVideoList=({id})=>instance.get(`/video/group?id=${id}`)
+
+  //获取视频播放地址
+  const getVideoUrl=({id})=>instance.get(`/video/url?id=${id}`)
+
   return{
     checkPhone,
     login,
@@ -63,7 +72,10 @@ const create = ()=>{
     getUrl,
     getLyric,
     getCatList,
-    getPlayList
+    getPlayList,
+    getVideoTag,
+    getVideoList,
+    getVideoUrl
   }
 }
 

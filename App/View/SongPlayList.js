@@ -29,7 +29,6 @@ class SongPlayList extends React.Component{
   }
 
   renderItem=({item})=>{
-    console.tron.log(item)
     return(
       <SongBox item={item}/>
     )

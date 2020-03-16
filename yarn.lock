@@ -856,11 +856,6 @@
   resolved "https://registry.npm.taobao.org/@react-native-community/async-storage/download/@react-native-community/async-storage-1.8.1.tgz#c93e69dcf948667b207e409b8039b7edf199159b"
   integrity sha1-yT5p3PlIZnsgfkCbgDm37fGZFZs=
 
-"@react-native-community/viewpager@^2.0.1":
-  version "2.0.2"
-  resolved "https://registry.npm.taobao.org/@react-native-community/viewpager/download/@react-native-community/viewpager-2.0.2.tgz#622b190294b1310c4825c98daeaee1c8443f7124"
-  integrity sha1-YisZApSxMQxIJcmNrq7hyEQ/cSQ=
-
 "@react-navigation/core@3.0.2":
   version "3.0.2"
   resolved "https://registry.npm.taobao.org/@react-navigation/core/download/@react-navigation/core-3.0.2.tgz?cache=0&sync_timestamp=1583233605197&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40react-navigation%2Fcore%2Fdownload%2F%40react-navigation%2Fcore-3.0.2.tgz#8631801533a27d034a3b8421dfd0510a9f27dcf3"
@@ -2105,6 +2100,11 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
+eme-encryption-scheme-polyfill@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/eme-encryption-scheme-polyfill/download/eme-encryption-scheme-polyfill-2.0.1.tgz#b080b01bffd74c75c9cf8044c1cabedf3b83954f"
+  integrity sha1-sICwG//XTHXJz4BEwcq+3zuDlU8=
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -3812,6 +3812,11 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+keymirror@0.1.1, keymirror@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npm.taobao.org/keymirror/download/keymirror-0.1.1.tgz#918889ea13f8d0a42e7c557250eee713adc95c35"
+  integrity sha1-kYiJ6hP40KQufFVyUO7nE63JXDU=
+
 kind-of@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/kind-of/download/kind-of-1.1.0.tgz#140a3d2d41a36d2efcfa9377b62c24f8495a5c44"
@@ -3910,6 +3915,11 @@ lodash-es@^4.2.0:
   version "4.17.15"
   resolved "https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.15.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash-es%2Fdownload%2Flodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
   integrity sha1-Ib2Wg5NUQS8j16EDQOXqxu5FXXg=
+
+lodash.debounce@4.0.8:
+  version "4.0.8"
+  resolved "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash.pad@^4.1.0:
   version "4.5.1"
@@ -5042,7 +5052,14 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.5.8:
+  version "15.5.8"
+  resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
+  integrity sha1-a3suFBCDvjjIWVqlH8VXdccZk5Q=
+  dependencies:
+    fbjs "^0.8.9"
+
+prop-types@^15.5.10, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -5139,6 +5156,18 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
+react-native-af-video-player@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npm.taobao.org/react-native-af-video-player/download/react-native-af-video-player-0.2.1.tgz#35ae17a10b9cba8465fc6a856207de773d2df723"
+  integrity sha1-Na4XoQucuoRl/GqFYgfedz0t9yM=
+  dependencies:
+    react-native-keep-awake "^2.0.6"
+    react-native-linear-gradient "^2.3.0"
+    react-native-orientation "^3.1.0"
+    react-native-slider "https://github.com/abbasfreestyle/react-native-slider.git"
+    react-native-vector-icons "^4.4.2"
+    react-native-video "^2.0.0"
+
 react-native-elements@^1.2.7:
   version "1.2.7"
   resolved "https://registry.npm.taobao.org/react-native-elements/download/react-native-elements-1.2.7.tgz?cache=0&sync_timestamp=1572338269238&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-native-elements%2Fdownload%2Freact-native-elements-1.2.7.tgz#1eca2db715c41722aeb67aea62bd2a4621adb134"
@@ -5170,6 +5199,21 @@ react-native-gesture-handler@~1.0.14:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
     prop-types "^15.5.10"
+
+react-native-keep-awake@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.npm.taobao.org/react-native-keep-awake/download/react-native-keep-awake-2.0.6.tgz#d8eaffe0a6377cc197469d9f06c7f317225403db"
+  integrity sha1-2Or/4KY3fMGXRp2fBsfzFyJUA9s=
+
+react-native-linear-gradient@^2.3.0:
+  version "2.5.6"
+  resolved "https://registry.npm.taobao.org/react-native-linear-gradient/download/react-native-linear-gradient-2.5.6.tgz#96215cbc5ec7a01247a20890888aa75b834d44a0"
+  integrity sha1-liFcvF7HoBJHogiQiIqnW4NNRKA=
+
+react-native-orientation@^3.1.0:
+  version "3.1.3"
+  resolved "https://registry.npm.taobao.org/react-native-orientation/download/react-native-orientation-3.1.3.tgz#d45803841fe94b6cce9acbe904fd5ca191a3711e"
+  integrity sha1-1FgDhB/pS2zOmsvpBP1coZGjcR4=
 
 react-native-ratings@^6.3.0:
   version "6.5.0"
@@ -5208,15 +5252,20 @@ react-native-safe-area-view@^0.12.0:
   dependencies:
     debounce "^1.2.0"
 
-react-native-scrollable-tab-view@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npm.taobao.org/react-native-scrollable-tab-view/download/react-native-scrollable-tab-view-1.0.0.tgz#87319896067f7bb643ecd7fba2cba4d6d8f9e18b"
-  integrity sha1-hzGYlgZ/e7ZD7Nf7osuk1tj54Ys=
+react-native-scrollable-tab-view@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.npm.taobao.org/react-native-scrollable-tab-view/download/react-native-scrollable-tab-view-0.10.0.tgz#8ce7908254685ee37d35df7d849676eaa1e81132"
+  integrity sha1-jOeQglRoXuN9Nd99hJZ26qHoETI=
   dependencies:
-    "@react-native-community/viewpager" "^2.0.1"
     create-react-class "^15.6.2"
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.3"
+
+"react-native-slider@https://github.com/abbasfreestyle/react-native-slider.git":
+  version "0.11.0"
+  resolved "https://github.com/abbasfreestyle/react-native-slider.git#c53b4965c5e4c3ec258479417898dece367e603e"
+  dependencies:
+    prop-types "^15.5.6"
 
 react-native-sound@^0.11.0:
   version "0.11.0"
@@ -5250,6 +5299,15 @@ react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
   dependencies:
     prop-types "^15.6.1"
 
+react-native-vector-icons@^4.4.2:
+  version "4.6.0"
+  resolved "https://registry.npm.taobao.org/react-native-vector-icons/download/react-native-vector-icons-4.6.0.tgz#e4014311ffa6de397d914ffc31b7097a874cc8d5"
+  integrity sha1-5AFDEf+m3jl9kU/8MbcJeodMyNU=
+  dependencies:
+    lodash "^4.0.0"
+    prop-types "^15.5.10"
+    yargs "^8.0.2"
+
 react-native-vector-icons@^6.6.0:
   version "6.6.0"
   resolved "https://registry.npm.taobao.org/react-native-vector-icons/download/react-native-vector-icons-6.6.0.tgz#66cf004918eb05d90778d64bd42077c1800d481b"
@@ -5258,6 +5316,23 @@ react-native-vector-icons@^6.6.0:
     lodash "^4.0.0"
     prop-types "^15.6.2"
     yargs "^13.2.2"
+
+react-native-video@^2.0.0:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/react-native-video/download/react-native-video-2.3.1.tgz#d0df6f984945a67a0cbfc5ad45a5156e2472ccce"
+  integrity sha1-0N9vmElFpnoMv8WtRaUVbiRyzM4=
+  dependencies:
+    keymirror "0.1.1"
+    prop-types "^15.5.10"
+
+react-native-video@^4.4.5:
+  version "4.4.5"
+  resolved "https://registry.npm.taobao.org/react-native-video/download/react-native-video-4.4.5.tgz#d0db799293f8622c7894dd0f8875cb41bfafbde8"
+  integrity sha1-0Nt5kpP4Yix4lN0PiHXLQb+vveg=
+  dependencies:
+    keymirror "^0.1.1"
+    prop-types "^15.5.10"
+    shaka-player "^2.4.4"
 
 react-native@0.57.7:
   version "0.57.7"
@@ -5464,6 +5539,15 @@ realpath-native@^1.1.0:
   integrity sha1-IAMpT+oj+wZy8kduviL89Jii1lw=
   dependencies:
     util.promisify "^1.0.0"
+
+recyclerlistview@^3.0.0-alpha.3:
+  version "3.0.0-alpha.3"
+  resolved "https://registry.npm.taobao.org/recyclerlistview/download/recyclerlistview-3.0.0-alpha.3.tgz#83508aa4c399243876c3900610e62cea2e19a988"
+  integrity sha1-g1CKpMOZJDh2w5AGEOYs6i4ZqYg=
+  dependencies:
+    lodash.debounce "4.0.8"
+    prop-types "15.5.8"
+    ts-object-utils "0.0.5"
 
 redux-persist-transform-immutable@^5.0.0:
   version "5.0.0"
@@ -5894,6 +5978,13 @@ setprototypeof@1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/setprototypeof/download/setprototypeof-1.1.1.tgz#7e95acb24aa92f5885e0abef5ba131330d4ae683"
   integrity sha1-fpWsskqpL1iF4KvvW6ExMw1K5oM=
+
+shaka-player@^2.4.4:
+  version "2.5.9"
+  resolved "https://registry.npm.taobao.org/shaka-player/download/shaka-player-2.5.9.tgz#007dc19df2bb5d3d959d278b2d894af05adffe38"
+  integrity sha1-AH3BnfK7XT2VnSeLLYlK8Frf/jg=
+  dependencies:
+    eme-encryption-scheme-polyfill "^2.0.0"
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -6429,6 +6520,11 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
+ts-object-utils@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/ts-object-utils/download/ts-object-utils-0.0.5.tgz#95361cdecd7e52167cfc5e634c76345e90a26077"
+  integrity sha1-lTYc3s1+UhZ8/F5jTHY0XpCiYHc=
+
 tunnel-agent@^0.6.0:
   version "0.6.0"
   resolved "https://registry.npm.taobao.org/tunnel-agent/download/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
@@ -6905,6 +7001,25 @@ yargs@^15.0.0:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^18.1.0"
+
+yargs@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.npm.taobao.org/yargs/download/yargs-8.0.2.tgz#6299a9055b1cefc969ff7e79c1d918dceb22c360"
+  integrity sha1-YpmpBVsc78lp/355wdkY3Osiw2A=
+  dependencies:
+    camelcase "^4.1.0"
+    cliui "^3.2.0"
+    decamelize "^1.1.1"
+    get-caller-file "^1.0.1"
+    os-locale "^2.0.0"
+    read-pkg-up "^2.0.0"
+    require-directory "^2.1.1"
+    require-main-filename "^1.0.1"
+    set-blocking "^2.0.0"
+    string-width "^2.0.0"
+    which-module "^2.0.0"
+    y18n "^3.2.1"
+    yargs-parser "^7.0.0"
 
 yargs@^9.0.0:
   version "9.0.1"

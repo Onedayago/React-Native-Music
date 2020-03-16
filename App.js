@@ -7,7 +7,6 @@
  */
 
 import React from 'react';
-import {View, Text} from 'react-native';
 import { Provider } from 'react-redux'
 import configureStore from './App/Store'
 import {PersistGate} from 'redux-persist/integration/react'

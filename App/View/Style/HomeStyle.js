@@ -10,7 +10,7 @@ export default getStyle = function () {
     container:{
       width: winW,
       height: winH,
-      paddingTop: 70
+      flex: 1
     },
     activeText: {
       color: 'black',
