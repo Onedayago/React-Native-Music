@@ -23,9 +23,9 @@ class PhoneLogin extends React.Component{
   constructor(props) {
     super(props);
     this.state={
-      phone: '18833234045',
+      phone: '',
       phoneCode: '+86',
-      password: '137212liushun',
+      password: '',
       type: Type.phone,
       beforeType: Type.phone
     }
