@@ -1,14 +1,14 @@
 import React from 'react'
-import {View, Text, ScrollView, TouchableOpacity} from "react-native";
-import {Header, Icon} from "react-native-elements";
+import {View} from "react-native";
 import {Dimensions} from 'react-native'
 import getStyle from './Style/HomeStyle'
 import FindView from '../View/FindView'
 import VideoList from './VideoList'
 import ScrollableTabView from "react-native-scrollable-tab-view";
 import CustomTabBar from '../Component/HomeCustomTabBar'
-import VideoView from "./VideoView";
 import MainView from '../Component/MainView'
+import YunCun from "./YunCun";
+import MyView from "./MyView";
 
 const winW = Dimensions.get('window').width
 const winH = Dimensions.get('window').height
@@ -44,13 +44,13 @@ class Home extends React.Component{
           }
           }>
           <View tabLabel={"我的"} style={Styles.container}>
-
+            <MyView/>
           </View>
           <View tabLabel={"发现"} style={Styles.container}>
             <FindView/>
           </View>
           <View tabLabel={"云村"} style={Styles.container}>
-
+            <YunCun/>
           </View>
           <View tabLabel={"视频"} style={Styles.container}>
             <VideoList/>

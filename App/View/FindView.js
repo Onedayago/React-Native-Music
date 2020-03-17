@@ -85,7 +85,9 @@ class FindView extends React.Component{
             />
             <Text style={Styles.topText}>歌单</Text>
           </TouchableOpacity>
-          <View style={Styles.topItem}>
+          <TouchableOpacity style={Styles.topItem} onPress={()=>{
+            navigate('RankingListView')
+          }}>
             <Icon
               containerStyle={Styles.topIcon}
               name='signal'
@@ -93,8 +95,10 @@ class FindView extends React.Component{
               color='white'
             />
             <Text style={Styles.topText}>排行榜</Text>
-          </View>
-          <View style={Styles.topItem}>
+          </TouchableOpacity>
+          <TouchableOpacity style={Styles.topItem} onPress={()=>{
+            navigate('RadioStation')
+          }}>
             <Icon
               containerStyle={Styles.topIcon}
               name='radio'
@@ -102,8 +106,10 @@ class FindView extends React.Component{
               color='white'
             />
             <Text style={Styles.topText}>电台</Text>
-          </View>
-          <View style={Styles.topItem}>
+          </TouchableOpacity>
+          <TouchableOpacity style={Styles.topItem} onPress={()=>{
+            navigate('LiveView')
+          }}>
             <Icon
               containerStyle={Styles.topIcon}
               name='radio-tower'
@@ -111,7 +117,7 @@ class FindView extends React.Component{
               color='white'
             />
             <Text style={Styles.topText}>直播</Text>
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     )

@@ -23,7 +23,7 @@ class SongSquare extends React.Component{
       const result = await ApiUtil.request('getCatList')
       if(result.data.code === 200){
         this.setState({
-          catList: result.data.sub.slice(0, 5)
+          catList: result.data.sub.slice(0, 10)
         })
       }else{
 

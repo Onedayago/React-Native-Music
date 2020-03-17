@@ -14,7 +14,10 @@ import PlaySongView from '../View/PlaySongView'
 import LeftView from '../View/LeftView'
 import SongSquare from '../View/SongSquare'
 import VideoList from '../View/VideoList'
+import RankingListView from '../View/RankingListView'
 import {Dimensions} from "react-native";
+import RadioStation from "../View/RadioStation";
+import LiveView from "../View/LiveView";
 
 const winW = Dimensions.get('window').width
 const winH = Dimensions.get('window').height
@@ -64,6 +67,24 @@ const MainNavigator = createStackNavigator({
   },
   VideoList:{
     screen: VideoList,
+    navigationOptions: {
+      header: null
+    }
+  },
+  RankingListView:{
+    screen: RankingListView,
+    navigationOptions: {
+      header: null
+    }
+  },
+  RadioStation:{
+    screen: RadioStation,
+    navigationOptions: {
+      header: null
+    }
+  },
+  LiveView:{
+    screen: LiveView,
     navigationOptions: {
       header: null
     }
