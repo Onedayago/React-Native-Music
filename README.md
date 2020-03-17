@@ -1,5 +1,5 @@
 ### 图片展示
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164731_309c12bf_2093191.png "Simulator Screen Shot - iPhone 8 Plus - 2020-03-17 at 16.40.50.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164900_6228db23_2093191.gif "Mar-17-2020 16-48-47.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164539_fe224162_2093191.gif "Mar-17-2020 16-45-21.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164632_7a6c3033_2093191.gif "Mar-17-2020 16-46-18.gif")
 ### 技术栈
