@@ -1,3 +1,7 @@
+### 图片展示
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164153_99a30bab_2093191.png "Simulator Screen Shot - iPhone 8 Plus - 2020-03-17 at 16.40.50.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164539_fe224162_2093191.gif "Mar-17-2020 16-45-21.gif")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164632_7a6c3033_2093191.gif "Mar-17-2020 16-46-18.gif")
 ### 技术栈
 1. react-native 0.57.7 主要技术
 2. redux 状态管理
@@ -15,7 +19,6 @@
 1. yarn install
 2. 使用 xcode 打开 ios 工程， 然后运行
 3. 暂时没有调试安卓端
-
 
 ### 开发工具
 1. xcode
