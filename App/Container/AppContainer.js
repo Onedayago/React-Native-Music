@@ -103,7 +103,7 @@ const RootNavigator = createSwitchNavigator({
   navigationOptions: {
     header: null,
   },
-  initialRouteName: 'Main',
+  initialRouteName: 'LoginView',
 });
 
 
