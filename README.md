@@ -2,6 +2,10 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164900_6228db23_2093191.gif "Mar-17-2020 16-48-47.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164539_fe224162_2093191.gif "Mar-17-2020 16-45-21.gif")
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0317/164632_7a6c3033_2093191.gif "Mar-17-2020 16-46-18.gif")
+
+### 仓库地址
+https://github.com/Onedayago/React-Native-Music.git
+后台地址: https://github.com/Binaryify/NeteaseCloudMusicApi.git
 ### 技术栈
 1. react-native 0.57.7 主要技术
 2. redux 状态管理
@@ -42,3 +46,5 @@
 3. 歌单广场 tab 导航样式 （需要自定义）
 4. 标签选择页(已找到插件，但功能与网易云音乐上的有些不同)
 5. 首页 tab 导航样式（需要自定义）
+
+
